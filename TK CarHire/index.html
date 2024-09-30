@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Anasayfa</title>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="container">
+        <a href="#" class="logo"><span class="text-primary">TK </span>CarHire <i class="fa-solid fa-car-side"></i></a>
+        <ul class="nav-links">
+            <li><a class="current" href="index.html">Anasayfa</a></li>
+            <li><a href="about.html">Hakkında</a></li>
+            <li><a href="hizmetler.html">Hizmetler</a></li>
+            <li><a href="contact.html">İletişim</a></li>
+        </ul>
+    </div>
+</nav>
+<div class="navbar-text">
+    <a class = "navbar-text" href="bilgi.html">Arabaların Bilgisi Ve Fiyat Listesi</a>
+</div>
+    <div class="container">
+        <div class="panel active" style="background-image: url('ford.jpg');"></div>
+        <div class="panel" style="background-image: url('rangerover.jpg');"></div>
+        <div class="panel" style="background-image: url('audi.jpg');"></div>
+        <div class="panel" style="background-image: url('mercedes.jpg');"></div>
+        <div class="panel" style="background-image: url('corvette.jpg');"></div>
+    </div>
+    <script>
+        const panels = document.querySelectorAll(".panel");
+        panels.forEach(panel => {
+        panel.addEventListener("click", () => {
+        removeActive();
+        panel.classList.add("active");
+    });
+        })
+        function removeActive(){
+            panels.forEach(panel => {
+                panel.classList.remove("active");
+            })
+    }
+    </script>
+    <footer class="footer">
+        <div class="footer-content">TK CarHire © 2024, Tüm Hakları Saklıdır</div>
+    </footer>
+  </body>
+</html>
+

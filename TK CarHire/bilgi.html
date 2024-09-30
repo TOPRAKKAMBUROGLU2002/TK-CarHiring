@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Araba ve Fiyat Bilgisi</title>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="container">
+        <a href="#" class="logo"><span class="text-primary">TK </span>CarHire <i class="fa-solid fa-car-side"></i></a>
+        <ul class="nav-links">
+            <li><a a class="current" href="index.html">Anasayfa</a></li>
+            <li><a href="about.html">Hakkında</a></li>
+            <li><a href="hizmetler.html">Hizmetler</a></li>
+            <li><a href="contact.html">İletişim</a></li>
+        </ul> 
+    </div>
+</nav>
+<div class="content">
+  <button class="slide-button prev" onclick="changeSlide(-1)"><i class="fa fa-chevron-left"></i></button>
+  <img src="ford.jpg" alt="Araba Resmi" class="content-image">
+  <div class="content-text">
+      <p>Marka: Ford</p>
+      <br>
+      <p>Seri: Focus</p>
+      <br>
+      <p>Model: 1.5 TDCi Style</p>
+      <br>
+      <p>Yıl: 2018</p>
+      <br>
+      <p>Yakıt: Dizel</p>
+      <br>
+      <p>Vites: Otomatik</p>
+      <br>
+      <p>Kasa Tipi: Sedan</p>
+      <br>
+      <p>Motor Gücü: 76 - 100 HP</p>
+      <br>
+      <p>Motor Hacmi: 1301 - 1600 cm3<p>
+      <br>
+      <p>Çekiş: Önden Çekiş</p>
+      <br>
+      <p>Renk: Gri</p>
+      <br>
+      <p>Günlük Kiralama Ücreti : 750TL</p>
+  </div>
+  <button class="slide-button next" onclick="changeSlide(1)"><i class="fa fa-chevron-right"></i></button>
+</div>
+    <footer class="footer">
+        <div class="footer-content">TK CarHire © 2024, Tüm Hakları Saklıdır</div>
+    </footer>
+    <script>
+      const slides = [
+      {
+              image: 'ford.jpg',
+              text: `
+              <p>Marka: Ford</p>
+              <br>
+              <p>Seri: Focus</p>
+              <br>
+              <p>Model: 1.5 TDCi Style</p>
+              <br>
+              <p>Yıl: 2018</p>
+              <br>
+              <p>Yakıt: Dizel</p>
+              <br>
+              <p>Vites: Otomatik</p>
+              <br>
+              <p>Kasa Tipi: Sedan</p>
+              <br>
+              <p>Motor Gücü: 76 - 100 HP</p>
+              <br>
+              <p>Motor Hacmi: 1301 - 1600 cm3<p>
+              <br>
+              <p>Çekiş: Önden Çekiş</p>
+              <br>
+              <p>Renk: Gri</p>
+              <br>
+              <p>Günlük Kiralama Ücreti : 750TL</p>
+              `
+          },  
+        {
+              image: 'rangerover.jpg',
+              text: `
+                <p>Marka: Range Rover</p>
+                <br>
+                <p>Seri: Sport</p>
+                <br>
+                <p>Model: HSE Dynamic</p>
+                <br>
+                <p>Yıl: 2019</p>
+                <br>
+                <p>Yakıt: Dizel</p>
+                <br>
+                <p>Vites: Otomatik</p>
+                <br>
+                <p>Kasa Tipi: SUV</p>
+                <br>
+                <p>Motor Gücü: 306 HP</p>
+                <br>
+                <p>Motor Hacmi: 2993 cm3</p>
+                <br>
+                <p>Çekiş: 4x4</p>
+                <br>
+                <p>Renk: Beyaz</p>
+                <br>
+                <p>Günlük Kiralama Ücreti: 1500TL</p>
+              `
+          },
+          {
+              image: 'audi.jpg',
+              text: `
+                <p>Marka: Audi</p>
+                <br>
+                <p>Seri: A4</p>
+                <br>
+                <p>Model: 2.0 TFSI</p>
+                <br>
+                <p>Yıl: 2019</p>
+                <br>
+                <p>Yakıt: Benzin</p>
+                <br>
+                <p>Vites: Otomatik</p>
+                <br>
+                <p>Kasa Tipi: Sedan</p>
+                <br>
+                <p>Motor Gücü: 200 - 250 HP</p>
+                <br>
+                <p>Motor Hacmi: 2001 - 2500 cm3</p>
+                <br>
+                <p>Çekiş: Quattro</p>
+                <br>
+                <p>Renk: Lacivert</p>
+                <br>
+                <p>Günlük Kiralama Ücreti : 2000TL</p>
+              `
+          },
+          {
+              image: 'mercedes.jpg',
+              text: `
+                <p>Marka: Mercedes</p>
+                <br>
+                <p>Seri: C-Serisi</p>
+                <br>
+                <p>Model: C 200</p>
+                <br>
+                <p>Yıl: 2021</p>
+                <br>
+                <p>Yakıt: Benzin</p>
+                <br>
+                <p>Vites: Otomatik</p>
+                <br>
+                <p>Kasa Tipi: Cabrio</p>
+                <br>
+                <p>Motor Gücü: 184 HP</p>
+                <br>
+                <p>Motor Hacmi: 1991 cm3</p>
+                <br>
+                <p>Çekiş: Arkadan İtiş</p>
+                <br>
+                <p>Renk: Gri</p>
+                <br>
+                <p>Günlük Kiralama Ücreti: 2500TL</p>
+              `
+          },
+          {
+              image: 'corvette.jpg',
+              text: `
+                <p>Marka: Chevrolet</p>
+                <br>
+                <p>Seri: Corvette</p> 
+                <br>
+                <p>Model: Stingray</p>
+                <br>
+                <p>Yıl: 2022</p>
+                <br>
+                <p>Yakıt: Benzin</p>
+                <br>
+                <p>Vites: Otomatik</p>
+                <br>
+                <p>Kasa Tipi: Coupe</p>
+                <br>
+                <p>Motor Gücü: 495 HP</p>
+                <br>
+                <p>Motor Hacmi: 6162 cm3</p>
+                <br>
+                <p>Çekiş: Arkadan İtiş</p>
+                <br>
+                <p>Renk: Turuncu</p>
+                <br>
+                <p>Günlük Kiralama Ücreti: 3000TL</p>
+              `
+          },
+      ];
+      let currentSlide = 0;
+      function changeSlide(direction) {
+          currentSlide += direction;
+          if (currentSlide < 0) {
+              currentSlide = slides.length - 1;
+          } else if (currentSlide >= slides.length) {
+              currentSlide = 0;
+          }
+          document.querySelector('.content-image').src = slides[currentSlide].image;
+          document.querySelector('.content-text').innerHTML = slides[currentSlide].text;
+      }
+  </script>
+  </body>
+</html>
+
